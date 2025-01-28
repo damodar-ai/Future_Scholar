@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global Changes  -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Clatians - Best CLAT coaching institutes in Patna</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="d-none d-md-block w-100">
+        <div class="bg-white">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-start p-2 gap-3">
+                    <div class="w-100 overflow-hidden">
+                        <!-- Marquee Component -->
+                        <marquee onmouseover="this.stop();" onmouseout="this.start();" class="mx-auto"
+                            style="--duration:20s;">
+                            <!-- Example logic with JavaScript for dynamic notifications -->
+                            <span id="notification-container">
+                                <!-- Loading -->
+                                <span class="badge bg-secondary" id="loading">Loading notifications...</span>
+                                <span class="badge bg-secondary" id="loading">Loading notifications...</span>
+                                <span class="badge bg-secondary" id="loading">Loading notifications...</span>
+                                <span class="badge bg-secondary" id="loading">Loading notifications...</span>
+                                <span class="badge bg-secondary" id="loading">Loading notifications...</span>
+                                <!-- Notifications will be dynamically added here -->
+                                <!-- Example Notifications -->
+                                <!--
+                                <a href="/locale/notifications" class="badge bg-secondary text-decoration-none">Notification Title</a>
+                                <span class="badge bg-secondary">No notifications available</span>
+                                -->
+                            </span>
+                        </marquee>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end w-100 gap-1">
+                        <!-- Top Bar Links -->
+                        <a href="/locale/take-admission-at-prayasiasacademy"
+                            class="btn-v btn-v-outline btn-v-default-size">Admission</a>
+                        <a href="/locale/#our-selections" class="btn-v btn-v-outline btn-v-default-size">Selection</a>
+                        <a href="/locale/test-series" class="btn-v btn-v-outline btn-v-default-size">MockTest</a>
+                        <a href="/" class="btn-v btn-v-outline btn-v-default-size position-relative">
+                            Live Classes
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1 pulse">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                        <a href="/locale/gallery" class="btn-v btn-v-outline btn-v-default-size">Videos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="images/logos.png" alt="clatians-Logo">
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="btn-v btn-v-ghost btn-v-default-size" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn-v btn-v-ghost btn-v-default-size" href="/about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn-v btn-v-ghost btn-v-default-size dropdown-toggle" href="#" id="coursesDropdown"
+                            role="button">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li><a class="dropdown-item" href="/course-1">Course 1</a></li>
+                            <li><a class="dropdown-item" href="/course-2">Course 2</a></li>
+                            <li><a class="dropdown-item" href="/course-3">Course 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn-v btn-v-ghost btn-v-default-size dropdown-toggle" href="#" id="resourcesDropdown"
+                            role="button">
+                            Free Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <li><a class="dropdown-item" href="/resource-1">Resource 1</a></li>
+                            <li><a class="dropdown-item" href="/resource-2">Resource 2</a></li>
+                            <li><a class="dropdown-item" href="/resource-3">Resource 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn-v btn-v-ghost btn-v-default-size" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn-v btn-v-ghost btn-v-default-size" href="/contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Call Us Dropdown -->
+                <div class="dropdown">
+                    <button class="btn-v btn-v-secondary btn-v-default-size rounded-pill dropdown-toggle" type="button"
+                        id="callUsDropdown" data-bs-toggle="dropdown">
+                        Call Us
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="callUsDropdown">
+                        <li><a class="dropdown-item" href="tel:+918818810184">+91 8818810184</a></li>
+                        <li><a class="dropdown-item" href="tel:+918818810183">+91 8818810183</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Switcher -->
+                <div class="language-switcher ms-3 btn-v">
+                    <button class="btn-v btn-v-default btn-v-default-size" id="btnEnglish">English</button>
+                    <button class="btn-v btn-v-default-size ms-1" id="btnHindi">Hindi</button>
+                </div>
+
+                <!-- Download App Button -->
+                <a class="btn-v btn-v-default btn-v-lg ms-3 rounded-pill" href="#" target="_blank">Download
+                    App</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Bar Ends  -->
+
+    <!-- Hero Section Starts  -->
+    <!-- Carousel Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://placehold.co/1528x250" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1528x250" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1528x250" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <section class="hero-section">
+        <div class="container">
+            <!-- Main Heading Section -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 text-section">
+                    <h1 class="display-4 mb-4">
+                        Future Scholars -<span class="text-primary-custom"> India's </span>  Leading Destination for Classroom & Home Tuition Excellence
+                    </h1>
+                    
+                    <p class="lead text-muted">
+                        At Future Scholars, we are committed to nurturing academic brilliance with personalized learning experiences. Whether in the classroom or at home, our expert tutors offer tailored lessons to help students excel in their studies. With a focus on building strong foundations and boosting confidence, we empower students to reach their full potential in subjects ranging from school curricula to competitive exams. Join Future Scholars today and embark on a journey toward academic success!
+                    </p>
+                    <a href="#" class="btn-v btn-v-default btn-v-lg mt-3">Get Started</a>
+                </div>
+                <div class="col-lg-6 text-center image-section">
+                    <img src="images/logos.png" alt="Instructor" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="row text-center features">
+                <div class="col-md-3 mb-4">
+                    <div class="feature-card">
+                        <i class="bi bi-camera-video-fill fs-1 text-primary-custom mb-3"></i>
+                        <h5>Daily Live</h5>
+                        <p>Interactive classes</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-card">
+                        <i class="bi bi-journal-text fs-1 text-primary-custom mb-3"></i>
+                        <h5>10 Million +</h5>
+                        <p>Tests, sample papers &amp; notes</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-card">
+                        <i class="bi bi-chat-dots-fill fs-1 text-primary-custom mb-3"></i>
+                        <h5>24 x 7</h5>
+                        <p>Doubt solving sessions</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-card">
+                        <i class="bi bi-building fs-1 text-primary-custom mb-3"></i>
+                        <h5>100 +</h5>
+                        <p>Offline centres</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Ends   -->
+
+    <!-- Cards Section Starts  -->
+    <section class="cards-section p-3" style="background: url('images/compress_background.webp');">
+        <div class="container">
+            <div class="row">
+                <!-- English Courses Card -->
+                <div class="col-md-6 mb-4 h-100">
+                    <div class="card h-100">
+                        <img src="images/logos.png" style="width: 30%;" class="card-img-top" alt="IAS">
+                        <div class="card-body text-center">
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CLAT</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CLAT + AILET</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CUET-LAW</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">OLET (CUET-LAW + AIL-LET +
+                                MH-CET)</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CLAT + OLET</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">Mock Test Series</a>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-v  btn-v-default w-100 btn-v-default-size">Explore Online
+                                Courses</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hindi Courses Card -->
+                <div class="col-md-6 mb-4 h-100">
+                    <div class="card h-100">
+                        <img src="images/logos.png" style="width: 30%;" class="card-img-top" alt="Prayas IAS">
+                        <!-- <button class="btn-v btn-v-default chip btn-v-sm">हिंदी</button> -->
+                        <div class="card-body text-center">
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CLAT</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CLAT + AILET</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CUET-LAW (UG)</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">CUET-LAW (PG)</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">AIL-LET</a>
+                            <a href="#" class="btn-v btn-v-secondary btn-v-default-size">BOOSTER Courses</a>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-v  btn-v-default w-100 btn-v-default-size">Explore Offline
+                                Courses</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cards Section Ends  -->
+
+
+    <!-- Blogs Section Starts  -->
+    <section id="blogs" class="blogs-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="blogs-title">Our Latest Blogs</h2>
+                <p class="blogs-subtext">Stay informed with the latest updates, strategies, and tips to excel in your
+                    exams.</p>
+            </div>
+            <!-- Blogs Grid -->
+            <div class="row g-4">
+                <!-- Blog Item 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blogs-card p-4 shadow-sm h-100">
+                        <div class="blogs-img-wrapper mb-3">
+                            <img src="https://placehold.co/600x400" class="blogs-img rounded" alt="Blog 1">
+                        </div>
+                        <h5 class="blogs-heading">Current Affairs for CLAT 2025</h5>
+                        <p class="blogs-text">
+                            Dive into the most important current affairs topics that are critical for CLAT and other
+                            legal exams.
+                        </p>
+                        <a href="#" class="btn blogs-btn mt-3">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Item 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blogs-card p-4 shadow-sm h-100">
+                        <div class="blogs-img-wrapper mb-3">
+                            <img src="https://placehold.co/600x400" class="blogs-img rounded" alt="Blog 2">
+                        </div>
+                        <h5 class="blogs-heading">Top 10 Legal Updates</h5>
+                        <p class="blogs-text">
+                            Stay updated with the latest changes in the legal world that may shape your preparation
+                            strategies.
+                        </p>
+                        <a href="#" class="btn blogs-btn mt-3">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Item 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blogs-card p-4 shadow-sm h-100">
+                        <div class="blogs-img-wrapper mb-3">
+                            <img src="https://placehold.co/600x400" class="blogs-img rounded" alt="Blog 3">
+                        </div>
+                        <h5 class="blogs-heading">Tips to Crack CLAT</h5>
+                        <p class="blogs-text">
+                            Explore proven strategies and techniques to maximize your scores and achieve your dream NLU.
+                        </p>
+                        <a href="#" class="btn blogs-btn mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section Ends  -->
+
+    <!-- Testimonials Section Starts  -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Students ❤️ Race </h2>
+                <p class="text-muted">Hear from our students</p>
+            </div>
+
+            <!-- Full-width Feature Card -->
+            <div class="row mb-5">
+                <div class="col-12 cardu">
+                    <div class="card shadow-lg w-100 d-flex flex-column flex-md-row overflow-hidden">
+                        <img src="http://placehold.co/600x400" class="card-img-top-v" alt="Main Testimonial">
+                        <div class="card-body-v">
+                            <p class="card-text">
+                                <img src="https://www.pw.live/_next/static/media/comma.fcbeaa74.webp" alt="quote">
+                                <br><br>
+                                My name is Tathagat Awatar. I secured All India Rank 1 by scoring full score in NEET UG
+                                2024. I started my preparation with Physics Wallah in 12th grade by joining the Lakshya
+                                NEET batch, then I took 2 drop by joining Yakeen NEET batch and I completed my full
+                                preparation from online PW batch. PW teachers and their guidance helps me to acheive
+                                AIR1 and motivated me during my drop year....
+                            </p>
+                            <div>
+                                <h3 class="h3 fw-bold">Multiple Rankers</h3>
+                                <p class="text-primary h6">AIR 1, AIR 86 and other - NEET</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Section -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-v btn-v-secondary p-4 rounded h-100">
+                            <div class="card-body-v">
+                                <p class="card-text">
+                                    The videos and classes on Physics Wallah helped me secure AIR 7 in UPSC CSE
+                                    2023. I truly recommend this platform for comprehensive preparation.
+                                </p>
+                                <p class="text-muted fw-bold mb-0">Anmol Rathore</p>
+                                <p class="small text-secondary">UPSC CSE 2023 AIR 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-v btn-v-secondary p-4 rounded h-100">
+                            <div class="card-body-v">
+                                <p class="card-text">
+                                    I am thrilled to share that I secured AIR 1 in GATE 2024. Physics Wallah's
+                                    structured curriculum and in-depth explanations made a big difference!
+                                </p>
+                                <p class="text-muted fw-bold mb-0">Raja Majhi</p>
+                                <p class="small text-secondary">GATE 2024 AIR 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-v btn-v-secondary p-4 rounded h-100">
+                            <div class="card-body-v">
+                                <p class="card-text">
+                                    Physics Wallah helped me establish the basics of every subject and allowed
+                                    me to progress quickly while maintaining accuracy. It was a game-changer!
+                                </p>
+                                <p class="text-muted fw-bold mb-0">Amit Kumar Mandal</p>
+                                <p class="small text-secondary">IBPS Topper</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-v btn-v-secondary p-4 rounded h-100">
+                            <div class="card-body-v">
+                                <p class="card-text">
+                                    Physics Wallah gave me confidence and structured my learning to crack my
+                                    exam. I owe my success to their excellent teaching!
+                                </p>
+                                <p class="text-muted fw-bold mb-0">Jane Doe</p>
+                                <p class="small text-secondary">NEET 2023 AIR 10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-v btn-v-secondary p-4 rounded h-100">
+                            <div class="card-body-v">
+                                <p class="card-text">
+                                    Amazing content! The faculty is highly experienced and makes the concepts
+                                    very easy to understand.
+                                </p>
+                                <p class="text-muted fw-bold mb-0">Mark Smith</p>
+                                <p class="small text-secondary">GATE 2024 AIR 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-v btn-v-secondary p-4 rounded h-100">
+                            <div class="card-body-v">
+                                <p class="card-text">
+                                    I would recommend Physics Wallah to anyone preparing for competitive exams.
+                                    Their guidance is unparalleled!
+                                </p>
+                                <p class="text-muted fw-bold mb-0">Sophia Lee</p>
+                                <p class="small text-secondary">IBPS Topper</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section Ends  -->
+
+    <!-- About us section starts  -->
+    <section class="py-5 bg-light text-dark">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Image Section -->
+                <div class="col-md-6">
+                    <img src="http://placehold.co/600x400" alt="working on housing"
+                        class="img-fluid rounded shadow-sm" />
+                </div>
+                <!-- Content Section -->
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold text-dark">
+                        We help drive your business forward faster
+                    </h1>
+                    <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, saepe aliquid autem alias vero
+                        distinctio dignissimos consequatur? Excepturi quibusdam, quam ipsum hic, laudantium ducimus
+                        suscipit, culpa facere consequuntur repellat delectus.
+                    </p>
+                    <div class="row g-4">
+                        <!-- Mission Card -->
+                        <div class="col-sm-6">
+                            <div class="p-4 border rounded shadow-sm bg-white h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="icon-circle me-3">
+                                        <i class="bi bi-stars fs-3"></i>
+                                    </span>
+                                    <h5 class="mb-0 fw-bold">Our Mission</h5>
+                                </div>
+                                <p class="text-secondary mb-0">
+                                    Providing world-class solutions for businesses globally.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Vision Card -->
+                        <div class="col-sm-6">
+                            <div class="p-4 border rounded shadow-sm bg-white h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="icon-circle me-3">
+                                        <i class="bi bi-eye fs-3"></i>
+                                    </span>
+                                    <h5 class="mb-0 fw-bold">Our Vision</h5>
+                                </div>
+                                <p class="text-secondary mb-0">
+                                    Empowering organizations to achieve their long-term goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About us section ends  -->
+    <section id="latest-updates" class="latest-updates-section py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="latest-updates-title">Latest Updates</h2>
+                <p class="latest-updates-subtext">Stay updated with our latest news, webinars, and achievements.</p>
+            </div>
+            <!-- Updates Grid -->
+            <div class="row g-4">
+                <!-- Update Item 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="latest-updates-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="latest-updates-icon">
+                                <i class="bi bi-calendar-event fs-3"></i>
+                            </span>
+                            <h5 class="ms-3 latest-updates-heading">Webinar on CLAT Strategy</h5>
+                        </div>
+                        <p class="latest-updates-text">
+                            Join our free webinar on how to crack CLAT with effective strategies. Learn from top mentors
+                            and get your doubts resolved live.
+                        </p>
+                        <a href="#" class="btn latest-updates-btn mt-3">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Update Item 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="latest-updates-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="latest-updates-icon">
+                                <i class="bi bi-megaphone fs-3"></i>
+                            </span>
+                            <h5 class="ms-3 latest-updates-heading">Admissions Open 2025</h5>
+                        </div>
+                        <p class="latest-updates-text">
+                            Enroll now in our Target and Foundation batches for CLAT 2025. Seats are filling fast. Get
+                            started with the best CLAT coaching today!
+                        </p>
+                        <a href="#" class="btn latest-updates-btn mt-3">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Update Item 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="latest-updates-card p-4 shadow-sm">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="latest-updates-icon">
+                                <i class="bi bi-star fs-3"></i>
+                            </span>
+                            <h5 class="ms-3 latest-updates-heading">Results of 2024</h5>
+                        </div>
+                        <p class="latest-updates-text">
+                            Check out our outstanding results for CLAT 2024, including top rank holders and testimonials
+                            from successful students.
+                        </p>
+                        <a href="#" class="btn latest-updates-btn mt-3">View Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="admissions-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="admissions-title">Admissions Open for 2025</h2>
+                <p class="admissions-subtext">Get detailed information about the admission process and scholarships we
+                    offer to help you achieve your goals.</p>
+            </div>
+
+            <!-- Admission Process and Scholarships -->
+            <div class="row g-4">
+                <!-- Admission Process -->
+                <div class="col-md-6">
+                    <div class="admissions-card p-4 shadow-sm rounded bg-white h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="admissions-icon">
+                                <i class="bi bi-clipboard-check fs-3"></i>
+                            </span>
+                            <h5 class="ms-3 admissions-heading">Admission Process</h5>
+                        </div>
+                        <p class="admissions-text">
+                            Our admission process is simple and transparent. Register online, complete the application
+                            form, and our team will guide you through the selection and enrollment steps.
+                        </p>
+                        <a href="#" class="btn admissions-btn mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Scholarships -->
+                <div class="col-md-6">
+                    <div class="admissions-card p-4 shadow-sm rounded bg-white h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="admissions-icon">
+                                <i class="bi bi-award fs-3"></i>
+                            </span>
+                            <h5 class="ms-3 admissions-heading">Scholarships</h5>
+                        </div>
+                        <p class="admissions-text">
+                            We offer a range of merit-based and need-based scholarships to support deserving students.
+                            Take advantage of these opportunities to make your dream a reality.
+                        </p>
+                        <a href="#" class="btn admissions-btn mt-3">Apply for Scholarship</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-subtext">Hover over a question to reveal the answer with a professional and casual style.
+                </p>
+            </div>
+
+            <!-- FAQ Cards -->
+            <div class="row g-4">
+                <!-- FAQ Items (Fixed 10 Questions) -->
+                <div class="col-md-6">
+                    <div class="faq-card">
+                        <div class="faq-hover">
+                            <span class="btn-v btn-v-default rounded-pill btn-v-icon">
+                                <i class="bi bi-question-circle"></i>
+                            </span>
+                            <p class="faq-hover-question">What is the admission process for CLATians courses?</p>
+                            <div class="faq-hover-answer"
+                                data-answer="Our admission process is simple and transparent. Register online, complete the application form.">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-hover">
+                            <span class="btn-v btn-v-default rounded-pill btn-v-icon">
+                                <i class="bi bi-award"></i>
+                            </span>
+                            <p class="faq-hover-question">Are there scholarships available for students?</p>
+                            <div class="faq-hover-answer"
+                                data-answer="Scholarships to deserving students. Apply during the admission process to check your eligibility.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="faq-card">
+                        <div class="faq-hover">
+                            <span class="btn-v btn-v-default rounded-pill btn-v-icon">
+                                <i class="bi bi-bar-chart-line"></i>
+                            </span>
+                            <p class="faq-hover-question">How are the mock tests structured?</p>
+                            <div class="faq-hover-answer"
+                                data-answer="Our mock tests are structured based on the latest CLAT pattern, covering all sections like Legal Reasoning, GK, and Logical Reasoning.">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-hover">
+                            <span class="btn-v btn-v-default rounded-pill btn-v-icon">
+                                <i class="bi bi-wallet2"></i>
+                            </span>
+                            <p class="faq-hover-question">Are there any EMI options for fee payment?</p>
+                            <div class="faq-hover-answer"
+                                data-answer="Yes, we offer EMI options to make the fee payment more convenient for students and parents.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section Starts  -->
+    <footer class="footer pt-5">
+        <div class="container pb-5">
+          <div class="row g-4">
+            <!-- Logo & Address -->
+            <div class="col-lg-3 col-md-6">
+              <div class="logo mb-3">
+                <img src="https://placehold.co/150x50" alt="Logo" class="rounded-pill">
+              </div>
+              <p class="mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi.
+              </p>
+              <p class="address">
+                Address: <br>
+                Pushpanjali Palace, Opposite Alankar Jewellers, <br>
+                Boring Road Chauraha, Patna
+              </p>
+              <div class="d-flex gap-3">
+                <!-- Social Icons -->
+                <a href="#" aria-label="Facebook">
+                  <img src="https://placehold.co/34" alt="Facebook" class="social-icon rounded-pill">
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <img src="https://placehold.co/34" alt="LinkedIn" class="social-icon rounded-pill">
+                </a>
+                <a href="#" aria-label="Twitter">
+                  <img src="https://placehold.co/34" alt="Twitter" class="social-icon rounded-pill">
+                </a>
+                <a href="#" aria-label="YouTube">
+                  <img src="https://placehold.co/34" alt="YouTube" class="social-icon rounded-pill">
+                </a>
+                <a href="#" aria-label="Instagram">
+                  <img src="https://placehold.co/34" alt="Instagram" class="social-icon rounded-pill">
+                </a>
+              </div>
+            </div>
+    
+            <!-- Footer Links -->
+            <div class="col-lg-9 col-md-6">
+              <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Admission</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">PSAT</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Gallery</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Test Series</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">FAQs</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h5>Resources</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Previous Year Papers</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Current Affairs</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Quizzes</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Mains Resources</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h5>Company</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="btn-v btn-v-link mb-2">About Us</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Careers</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Faculty</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Contact</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Legal</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h5>Courses</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="btn-v btn-v-link mb-2">UPSC</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">State PCS</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Optional Subjects</a></li>
+                    <li><a href="#" class="btn-v btn-v-link mb-2">Foundation Course</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom pt-3 text-center">
+            <p class="mb-1">© 2025 IAS Academy - All rights reserved.</p>
+        </div>
+      </footer>
+    <!-- Footer Section Ends  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
